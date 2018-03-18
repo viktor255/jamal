@@ -180,7 +180,8 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: 5vw;
+    /*margin-left: 5vw;*/
+    padding-left: 5vw;
 }
 .contactFlexContainer > div {
     /*padding-right: 5vw;*/
