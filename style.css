@@ -61,7 +61,7 @@ body {
 
 #cover {
     /*background: url(img/cover.jpg) no-repeat center fixed;*/
-    background: url(img/cover3.jpg) no-repeat center fixed;
+    background: url(img/cover3.jpg) no-repeat center;
     background-size: cover;
     min-height: 80vh;
     /*max-height: 97vh;*/
@@ -208,6 +208,10 @@ body {
     color: white;
 }
 
+.paddingTop {
+    height: 10vh;
+}
+
 .centeredFlexContainer {
     display: flex;
     flex-direction: row;
@@ -225,7 +229,21 @@ body {
     display: grid;
     padding-left: 10vw;
      /*Display as a Grid */
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+    /* repeat = as many times as you can fit */
+    /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+    /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+    grid-gap: 2vw;
+    font-family: open_sans, sans-serif;
+    font-size: 110%;
+    color: white;
+}
+
+.containerAltContacts {
+    display: grid;
+    padding-left: 10vw;
+    /*Display as a Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* repeat = as many times as you can fit */
     /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
     /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
@@ -262,11 +280,19 @@ body {
 .serviceContacts {
     /*padding-top: 4vh;*/
     /*padding-right: 5vw;*/
+    /*text-indent: -30px;*/
+    /*word-spacing: 120%;*/
+    letter-spacing: 0.05em;
+}
+
+#contactContacts {
+    letter-spacing: 0.05em;
 }
 
 .headerServis {
     color: #da251d;
     font-size: 170%;
+    letter-spacing: 0.08em;
 }
 
 .holder {
@@ -345,6 +371,7 @@ svg #base {
 
 .leftArrow {
     margin-top: 20vh;
+    padding-bottom: 10vh;
     padding-left: 2vw;
     padding-right: 2vw;
     margin-left: auto;
