@@ -1,9 +1,9 @@
 @import 'fonts.css';
+
 body {
     margin: 0;
     padding: 0;
 }
-
 
 #header {
     width: 100%;
@@ -21,10 +21,13 @@ body {
     opacity: 1;
     float: left;
 }
-#logo:hover { opacity:0.8;}
+
+#logo:hover {
+    opacity: 0.8;
+}
 
 #nav {
-   /* width: 400px;*/
+    /* width: 400px;*/
     width: 450px;
     float: right;
     /*margin-top: 33px;*/
@@ -34,30 +37,36 @@ body {
     font-size: 80%;
     /*letter-spacing: -0.05vw;*/
 }
-#nav ul{
+
+#nav ul {
     list-style: none;
     display: block;
     margin: 0 auto;
 }
-#nav li{
+
+#nav li {
     padding-top: 29px;
     float: left;
     padding-right: 21px;
 }
 
-#nav li img{
+#nav li img {
     margin-top: -3px;
     height: 25px;
 }
 
 #nav li a {
     color: #fff;
-    opacity:0.8;
+    opacity: 0.8;
     font-size: 120%;
     text-decoration: none;
 }
+
 /*#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }*/
-#nav li a:hover { color: #fff; opacity:1;}
+#nav li a:hover {
+    color: #fff;
+    opacity: 1;
+}
 
 #cover {
     /*background: url(img/cover.jpg) no-repeat center fixed;*/
@@ -77,7 +86,7 @@ body {
     display: block;
     font-family: fanwoodregular, sans-serif;
     color: #fff;
-    opacity:1;
+    opacity: 1;
     font-size: 200%;
     text-decoration: none;
     text-align: center;
@@ -97,27 +106,33 @@ body {
     border-top-color: #646467;*/
     box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.67);
 }
+
 #imageLogo {
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
 #imageLogo li {
     display: table-cell;
     padding: 0 2vw;
 }
-#imageLogo img{
+
+#imageLogo img {
     max-width: 50%;
 }
+
 #imageLogo li img:hover {
     opacity: 0.4;
 }
+
 @media screen and (min-width: 2200px) {
     #imageLogo li {
         display: inline-flex;
     }
 }
-#imageServisLogo img{
+
+#imageServisLogo img {
     max-width: 70%;
     height: auto;
     box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.8), 3px 30px 80px 1px rgba(0, 0, 0, 0.8);
@@ -126,8 +141,8 @@ body {
 #imageServisLogo {
     padding-top: 10vw;
     text-align: center;
-   /* padding-right: 15vw;*/
-    margin:0;
+    /* padding-right: 15vw;*/
+    margin: 0;
 }
 
 #imageServisLogo li {
@@ -135,6 +150,7 @@ body {
     padding: 10px 10px;
 
 }
+
 #imageServisLogo li img:hover {
     opacity: 0.4;
 }
@@ -144,21 +160,53 @@ body {
     padding-right: 10vw;
     padding-left: 10vw;
     text-align: center;
-    margin:0;
+    margin: 0;
 }
+
+#imagePrenajomLogo a {
+    padding: 0;
+    margin: 0;
+}
+
 #imagePrenajomLogo li {
+    position: relative;
     display: inline-block;
-    padding: 10px 10px;
+    /*padding: 10px 10px;*/
+    margin: 10px 10px;
     width: 20vh;
 
 }
-#imagePrenajomLogo img{
-     max-width: 100%;
-     height: auto;
-     box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.8), 3px 30px 80px 1px rgba(0, 0, 0, 0.8);
- }
-#imagePrenajomLogo li img:hover {
+
+#imagePrenajomLogo img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.8), 3px 30px 80px 1px rgba(0, 0, 0, 0.8);
+}
+
+#imagePrenajomLogo li:hover {
     opacity: 0.4;
+}
+
+.imageText {
+    position: absolute; /* Position the background text */
+    bottom: 4px; /* At the bottom. Use top:0 to append it to the top */
+    /*top: 0; !* At the bottom. Use top:0 to append it to the top *!*/
+    background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    max-width: 100%;
+    width: 20vh;
+    letter-spacing: 0.05em;
+    /*margin-bottom: 2%;*/
+    /*width: 100%; !* Full width *!*/
+    /*padding: 20px; !* Some padding *!*/
+}
+
+.imageText h3 {
+    /*margin: 0;*/
+    margin: 10px 0 10px 0;
+    font-family: open_sans, sans-serif;
+    font-size: 110%;
+    letter-spacing: 0.05em;
 }
 
 #imgAbout {
@@ -183,6 +231,7 @@ body {
     /*margin-left: 5vw;*/
     padding-left: 5vw;
 }
+
 .contactFlexContainer > div {
     /*padding-right: 5vw;*/
     font-family: open_sans, sans-serif;
@@ -199,7 +248,7 @@ body {
 }
 
 #mapContact {
-    margin-top: 10vh;
+    /*margin-top: 10vh;*/
     margin-left: 5vw;
 }
 
@@ -219,6 +268,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .centeredFlexContainer > div {
     /*padding-right: 5vw;*/
     font-family: open_sans, sans-serif;
@@ -226,10 +276,16 @@ body {
     color: white;
 }
 
+.centeredFlexContainer a {
+    /*text-decoration: inherit;*/
+    /*text-underline: none;*/
+    color: white;
+}
+
 .containerAlt {
     display: grid;
     padding-left: 10vw;
-     /*Display as a Grid */
+    /*Display as a Grid */
     grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
     /* repeat = as many times as you can fit */
     /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
@@ -257,16 +313,45 @@ body {
 .itemAlt {
 }
 
+.tableCena {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableCena td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px 50px 8px 8px;
+}
+
+.tableCena th {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 8px 50px 8px 8px;
+}
+
+.tableCena tr:nth-child(even) {
+    /*background-color: rgba(255, 255, 255, 0.45);*/
+    background-color: rgba(218, 37, 29, 0.43);
+}
+.tableCena tr:nth-child(odd) {
+    /*background-color: rgba(255, 255, 255, 0.45);*/
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
 #serviceOffer {
     /*padding-left: 2vw;*/
 }
+
 #serviceOffer ul {
     padding-left: 1vw;
 }
+
 .service {
     text-align: justify;
     text-justify: auto;
-    max-width: 40vw;
+    max-width: 42vw;
     min-width: 425px;
 }
 
@@ -313,14 +398,11 @@ body {
     display: inline-block;
 }
 
-
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizelegibility;
 }
-
-
 
 /*
 body {
@@ -329,10 +411,10 @@ body {
 */
 
 .text {
- /*   width: 100%;*/
+    /*   width: 100%;*/
     height: 13vh;
     z-index: 10;
-  /*  background-color: rgba(0, 0, 0, 0.79);*/
+    /*  background-color: rgba(0, 0, 0, 0.79);*/
     box-shadow: 0 -5px 60px rgba(0, 0, 0, 0.41);
 
     width: 60vh;
@@ -346,24 +428,29 @@ svg {
     height: inherit;
     border-radius: 50px 50px 0 0;
 }
+
 svg text {
     text-anchor: middle;
 }
+
 svg #alpha {
     /*fill: rgba(254, 255, 252, 0.66);*/
     fill: rgb(255, 255, 255);
 }
+
 svg #title {
     letter-spacing: -0.2vh;
     font-size: 6vh;
     font-weight: 800;
 }
+
 svg #subtitle {
     letter-spacing: 0.4vh;
     font-size: 2vh;
     font-weight: 300;
     text-transform: uppercase;
 }
+
 svg #base {
     /*fill: rgb(0, 0, 0);*/
     fill: rgb(255, 255, 255);
@@ -371,7 +458,7 @@ svg #base {
 }
 
 .leftArrow {
-    margin-top: 20vh;
+    margin-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 2vw;
     padding-right: 2vw;
