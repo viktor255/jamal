@@ -251,7 +251,7 @@ body {
 
 #mapContact {
     /*margin-top: 10vh;*/
-    margin-left: 5vw;
+    /*margin-left: 5vw;*/
 }
 
 #contact {
@@ -262,6 +262,7 @@ body {
 
 .paddingTop {
     height: 10vh;
+    min-height: 80px;
 }
 
 .centeredFlexContainer {
@@ -284,29 +285,41 @@ body {
     color: white;
 }
 
+@media only screen and (min-width: 1000px) {
+    .containerAlt {
+        display: grid;
+        /*Display as a Grid */
+        grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 2vw;
+    }
+    .containerAltContacts {
+        display: grid;
+        /*Display as a Grid */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 2vw;
+    }
+    .service {
+        max-width: 42vw;
+        min-width: 425px;
+    }
+
+}
+
 .containerAlt {
-    display: grid;
     padding-left: 10vw;
-    /*Display as a Grid */
-    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
-    /* repeat = as many times as you can fit */
-    /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
-    /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
-    grid-gap: 2vw;
     font-family: open_sans, sans-serif;
     font-size: 110%;
     color: white;
 }
 
 .containerAltContacts {
-    display: grid;
     padding-left: 10vw;
-    /*Display as a Grid */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* repeat = as many times as you can fit */
-    /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
-    /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
-    grid-gap: 2vw;
     font-family: open_sans, sans-serif;
     font-size: 110%;
     color: white;
@@ -353,8 +366,7 @@ body {
 .service {
     text-align: justify;
     text-justify: auto;
-    max-width: 42vw;
-    min-width: 425px;
+    max-width: 80vw;
 }
 
 #serviceContacts h3 {
@@ -375,6 +387,7 @@ body {
 
 #contactContacts {
     letter-spacing: 0.05em;
+    padding-right: 5vw;
 }
 
 .headerServis {
@@ -415,11 +428,10 @@ body {
 .text {
     /*   width: 100%;*/
     height: 13vh;
+    max-width: 60vh;
     z-index: 10;
     /*  background-color: rgba(0, 0, 0, 0.79);*/
     box-shadow: 0 -5px 60px rgba(0, 0, 0, 0.41);
-
-    width: 60vh;
     display: block;
     margin: auto;
     border-radius: 50px 50px 0 0;
