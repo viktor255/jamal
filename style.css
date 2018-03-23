@@ -315,6 +315,10 @@ body {
         /*margin-left: 5vw;*/
         padding-left: 5vw;
     }
+    .paddingTop {
+        height: 10vh;
+        min-height: 80px;
+    }
 
 }
 
