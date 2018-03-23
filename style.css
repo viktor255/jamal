@@ -226,11 +226,10 @@ body {
 }
 
 .contactFlexContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /*margin-left: 5vw;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: flex-start;*/
     padding-left: 5vw;
 }
 
@@ -261,7 +260,7 @@ body {
 }
 
 .paddingTop {
-    height: 10vh;
+    height: 5vh;
     min-height: 80px;
 }
 
@@ -284,7 +283,7 @@ body {
     /*text-underline: none;*/
     color: white;
 }
-
+/*Uprava na mobily, default je na mobil a toto sa zmeni pri vetsom okne*/
 @media only screen and (min-width: 1000px) {
     .containerAlt {
         display: grid;
@@ -307,6 +306,14 @@ body {
     .service {
         max-width: 42vw;
         min-width: 425px;
+    }
+    .contactFlexContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /*margin-left: 5vw;*/
+        padding-left: 5vw;
     }
 
 }
