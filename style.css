@@ -70,14 +70,14 @@ body {
 
 #cover {
     /*background: url(img/cover.jpg) no-repeat center fixed;*/
-    background: url(img/cover3.jpg) no-repeat center;
+    background: url(img/cover3.jpg) no-repeat center black;
     background-size: cover;
     min-height: 80vh;
     /*max-height: 97vh;*/
 }
 
 #coverServis {
-    background: url(img/coverServis3.jpg) no-repeat center fixed;
+    background: url(img/coverServis3.jpg) no-repeat center fixed black;
     background-size: cover;
     min-height: 100vh;
 }
