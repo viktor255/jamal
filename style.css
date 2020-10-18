@@ -69,7 +69,6 @@ body {
 }
 
 #cover {
-    /*background: url(img/cover.jpg) no-repeat center fixed;*/
     background: url(img/cover3.jpg) no-repeat center black;
     background-size: cover;
     min-height: 80vh;
